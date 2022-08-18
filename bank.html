@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcom to the Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header><h1 class="text-5xl text-center mt-6">Lets Get some <span class="font-semibold">moneyyyy</span> !!!</h1></header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-green-400 p-8 rounded-xl">
+                  <h4 class="text-2xl">Deposite</h4>
+                  <h2  class="text-5xl" >$<span id="deposite-total">000</span></h2>
+                </div>
+                <div class="bg-yellow-500 p-8 rounded-xl">
+                  <h4 class="text-2xl">Widthdraw</h4>
+                  <h2 class="text-5xl" >$ <span id="widthdraw-total">000</span></h2>
+                </div>
+                <div class="bg-blue-500 p-8 rounded-xl">
+                  <h4 class="text-2xl">Balance</h4>
+                  <h2 class="text-5xl" >$<span id="balance-total">1240</span></h2>
+                </div>
+            </div>
+        </section>
+     <!-- deposite and Widthdraw -->
+
+     <section class="mt-12">
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto ">
+            <div class="bg-sky-600 p-8 rounded-xl">
+                <h4 class="text-2xl">Please Deposite</h4>
+                
+                    <input class="w-9/12 block mb-4 mt-4 p-4 rounded-xl text-black " type="text" name="email" id="deposite-field"
+                        placeholder="Amount You want to deposite">
+                    
+                    <button id="btn-deposite"
+                        class="bg-amber-400 hover:bg-sky-700 px-8 py-3 mt-4 text-white rounded-xl ">Submit</button>
+             
+              </div>
+              <div class="bg-blue-500 p-8 rounded-xl ">
+                <h4 class="text-2xl">Please Widthdraw</h4>
+                <input class="w-9/12 block mb-4 mt-4 p-4 rounded-xl text-black " type="text" name="email" id="widthdraw-field"
+                placeholder="Amount you want to Widthdraw">
+            
+            <button id="btn-widthdraw"
+                class="bg-amber-400 hover:bg-blue-700 px-8 py-3 mt-4 text-white rounded-xl  ">Submit</button>
+              </div>
+
+    </div>
+
+     </section>
+    </main>
+    
+    <script src="deposite.js"></script>
+</body>
+</html>
